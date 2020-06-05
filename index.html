@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    
+<head>
+  <meta charset="utf-8">
+  <title>My Blender Art</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flxb.css">
+  <link rel="stylesheet" href="css/ltbx.css">
+    
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Art made with Blender. Relax. Enjoy.</h1>
+  <p>Left click any image to begin your slideshow anywhere you want.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="imgs/2_furrballs.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="imgs/EVmicrophone.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    <img src="imgs/RocksAndPosts.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  
+  <div class="column">
+    <img src="imgs/3%20Legos.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="imgs/LandAndSea.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    <img src="imgs/MonsterintheStreet.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div> 
+   
+  <div class="column">
+    <img src="imgs/Clear%20and%20Blue%20Glass.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="imgs/SunsetBeach.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+    </div>
+  
+  <div class="column">
+    <img src="imgs/Hammer.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="imgs/coolball.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="imgs/2_furrballs.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="imgs/3%20Legos.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="imgs/Clear%20and%20Blue%20Glass.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="imgs/Hammer.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="imgs/EVmicrophone.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="imgs/LandAndSea.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="imgs/SunsetBeach.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="imgs/coolball.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="imgs/RocksAndPosts.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="imgs/MonsterintheStreet.jpg" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+</div>
+</div>
+
+<script src="js/vendor/modernizer-3.8.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/modal.js"></script>
+
+</body>
+    
+</html>
+    
